@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Revolution&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li ,a ,button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width: 100%;
+    background-color: red;
+
+}
+:root {
+    --color:#012970;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito", sans-serif;
+    --nav-font: "Inter", sans-serif;
+}   
+h1,h2{
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0px 80px;
+    background-color: red;
+}
+.header ul li{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-right: 10px;
+    transition: 0.2s ease-in-out;
+}
+.header ul li:hover{
+    background-color: aliceblue;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login  button{
+    padding: 10px 20px;
+}
+
+.popMenu{
+    z-index: 1000;
+    width: 270px;
+    left: -270px;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(249, 249, 249);
+    transition: 0.2s ease-in-out;
+}
+.popMenu ul li{
+    border-bottom: 1px solid black;
+    padding: 15px 20px;
+    transition: 0.2s ease-in-out;
+}
+.popMenu ul li:hover{
+    background-color: azure;
+}
+.popUp{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.395);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+.sum-Menu{
+    z-index: 10;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    position: absolute;
+    background-color: cadetblue;
+}
+.sum-Menu ul li{
+    width: 100%;
+    float: left;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.ul1 li:hover .sum-Menu {
+    display: block;
+}
+
+        /* About container-content  */
+
+.container-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+.aside{
+    position: fixed;
+    padding: 50px 20px;
+    width: 270px;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+.aside ul li{
+    padding: 15px 20px;
+}
+.aside ul li:hover{
+    background-color: aliceblue;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px 50px 290px;
+    /* background-color: rgb(195, 239, 255); */
+}
+
+.sub-container{
+    width: 70%;
+    /* background-color: rgba(240, 248, 255, 0.663); */
+}
+
+#about-me{
+    width: 100%;
+    /* padding-top: 40px; */
+}
+.about-content{
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.11);
+    justify-content: space-between;
+}
+.about-des{
+    padding: 20px;
+}
+.about-des h1{
+    font-size: 25px;
+}
+.about-des h2{
+    font-size: 20px;
+}
+.about-des span{
+    color: var(--color);
+    font-weight: 700;
+}
+.about-des button{
+    padding: 11px 20px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.about-img{
+    position: relative;
+}
+.bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.664),rgba(255, 255, 255, 0.13));
+
+}
+
+
+        /* About slide box  */
+
+#slide-container{
+    margin-bottom: 40px;
+}
+.slide-box{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    float: left;
+    background-color: #a09b9b;
+    overflow: hidden;
+}
+.slide-box .slide{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+.slide-box .btn1{
+    position: absolute;
+    top: 50%;
+    transform:  translate(0, -50%);
+    background-color: rgba(0, 0, 0, 0.162);
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+.slide-box .btn1:hover{
+    background-color: black;
+}
+.slide-box .btn-next{
+    right: 0;
+}
+.slide-box .btn-back{
+    left: 0;
+}
+.page-slide{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    /* background-color: rgba(0, 0, 0, 0.342); */
+}
+.page-slide ul li{
+    /* display: inline-block; */
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 2px;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+.page-slide ul li:hover{
+    background-color: lightskyblue;
+}
+.active{
+    background-color: red !important;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.sub-right{
+    width: 28%;
+    height: auto;
+    background-color: antiquewhite;
+}
+.my-profile img{
+    width: 15vw;
+}
+
+
+
+        /* About friend list box design  */
+/* 
+.friend-list-box{
+    position: fixed;
+    transform: translateX(-10px);
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 500px;
+    background-color: #ffffff;
+}
+.friend-list-box .header-friend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-right: 20px;
+    width: 100%;
+    height: 30px;
+    color: black;
+    background-color: red;
+}
+.friend-list-box .header-friend:hover{
+    background-color: #0b5ff062;
+}
+.friend-list-box ul li{
+    float: left;
+    width: 100%;
+    padding: 15px;
+    background-color: #012a7007;
+}
+.friend-list-box ul li:hover{
+    background-color: #b1b1b192;
+}
+.friend-list-box .img-box{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    float: left;
+}
+.friend-list-box .txt-name{
+    float: left;
+    width:225px;
+    height:35px;
+    
+} */
+
+
